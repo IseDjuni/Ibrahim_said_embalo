@@ -1,0 +1,322 @@
+*{
+
+    margin: 0;
+
+    padding: 0%;
+
+    box-sizing: border-box;
+
+}
+
+:root {
+
+    --color-dark-purple: rgb(10, 0, 10);
+
+    --color-white: rgb(218, 218, 218);
+
+    --color-gold: goldenrod;
+
+}
+
+@font-face{
+
+    font-family: 'cusfonts';
+
+    src: url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/webfonts/fa-brands-400.ttf') format('ttf');
+
+}
+
+body{
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    font-size: 1.0625rem;
+
+    background-color: black;
+
+    color: var(--color-white);
+    overflow-x: hidden;
+}
+
+.dropdown_menu{
+
+    background-color: var(--color-dark-purple);
+
+    height: 4.375rem;
+
+    width: 100vw;
+
+    align-items: center;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    padding: 2.5%;
+
+
+
+}
+
+.logo{
+
+    color: var(--color-white);
+
+    user-select: none;
+
+    font-family: sans-serif;
+
+}
+
+.logo span{
+
+    color: goldenrod;
+
+}
+
+.dropdown_menu ul{
+
+    list-style: none;
+
+    display: flex;
+
+}
+
+.dropdown_menu ul li{
+
+    padding: 0.625rem 2.5rem;
+
+}
+
+.dropdown_menu ul li a{
+
+    text-decoration: none;
+
+    color: var(--color-white);
+
+    text-transform: uppercase;
+
+    font-size: 0.9375rem;
+
+}
+
+.dropdown_menu ul li a:hover{
+
+    color: white;
+
+
+
+}
+
+.hero{    
+
+    height: calc(100vh - 4.375rem);
+
+    background-image: url(../Web_ject_2/web_img/black-paper-background.webp);
+
+    background-position: center;
+
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+    position: relative;
+
+    height: fit-content;
+
+    width: 100vw;
+
+}
+
+nav.dropdown_menu ul li a:hover{
+
+    color: white;
+
+    position: relative;
+
+}
+
+nav.dropdown_menu ul li a::before{
+
+    content: '';
+
+    position: absolute;
+
+    left: 0;
+
+    height: 0.125rem;
+
+    bottom: -0.3125rem;
+
+    background-color: goldenrod;
+
+    width: 0%;
+
+    transition: all ease-out .4s;
+
+}
+
+nav.dropdown_menu ul li a:hover::before{
+
+    width: 100%;
+
+}
+
+.checkbtn{
+
+    font-size: 1rem;
+
+    color: var(--color-white);
+
+    align-items: end;
+
+    float: right;
+
+    position: relative;
+
+    margin-right: 0.9375rem;
+
+    cursor: pointer;
+
+    display: none;
+
+}
+
+#check {
+
+    display: none;
+
+}
+
+@media all and (max-width: 720px){
+    body{
+        margin:0px;
+        padding: 0px;
+        right: 0px;
+        margin-right: 0px;
+    }
+    .checkbtn{
+        display: block;
+        margin-top: -18px;
+    }
+
+    .dropdown_menu{
+
+    background-color: var(--color-dark-purple);
+
+    height: 100%;
+
+    width: 100vw;
+
+    align-items: center;
+
+    display: block;
+
+    padding: 2.5%;
+    
+
+}
+.logo{
+    font-size: 1rem;
+}
+.dropdown_menu ul li a{
+    font-size: small;
+}
+
+    .dropdown_menu ul{
+
+   display: block;
+   margin-top: 20px;
+   margin-left: -20px;
+   transition: 1s;
+   display: none;
+    }
+    #check:checked  .dropdown_menu ul{
+        display: block;
+    }
+
+    .statistics{
+
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .flex{
+
+        flex-direction: column;
+
+    }
+
+    .profile_picture{
+        margin: none;
+        top: -70px;
+    }
+
+    .d_load{
+        font-size: 0.625rem;
+        margin: none;
+    }
+    .social{
+        font-size: 10px;
+    }
+    .body_margin{
+        width: 100%;
+        height: auto;
+    }
+    .name {
+        top: -70px;
+        position: relative;
+    }
+    .dropdown_menu{
+        width: 560px;
+    }
+    .hero{
+        width: 560px
+    }
+    .content{
+        width: 560px
+    }
+    .statistics{
+        padding-inline: 100px; 
+    }
+    .text{
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .h_line{
+        display: none;
+    }
+
+}
+@media all and (min-width: 721px) and (max-width: 1124px) {
+    .statistics{
+
+        flex-direction: column;
+        justify-content: center;
+    }
+    .statistics{
+        padding-inline: 180px;
+    }
+    .flex{
+        flex-wrap: wrap;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .dropdown_menu ul li a{
+        font-size: 12px;
+    }
+    .h_line{
+        display: none;
+    }
+    .social{
+        font-size: 15px;
+    }
+}
+
+
+
+
+
+
+

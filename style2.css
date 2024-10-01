@@ -1,0 +1,205 @@
+.name{
+
+    margin:1.5625rem 4.6875rem;
+
+    font-weight: bold;
+
+    font-size: medium;
+
+    background: linear-gradient(to right, rgb(255, 183, 0), rgb(0, 162, 255));
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    color: transparent;
+
+    display: inline-block;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.name span{
+
+    font-size: 1.6875rem;
+
+}
+
+.name span h1 span{
+
+    font-size: 1.6875rem;
+
+}
+
+.body_margin{
+
+    margin:1.25rem 4.875rem;
+
+    width: 26rem;
+
+    height: auto;
+
+}
+
+.profile_picture{
+
+    height: 15.625rem;
+
+    width: 14.8125rem;
+
+    float: right;
+
+    margin: 3.125rem;
+
+    margin-right: 13.125rem;
+
+    border-radius:50%;
+
+    border: 3px solid transparent;
+
+    position: relative;
+
+    background: linear-gradient(to right, rgb(255, 183, 0), rgb(0, 162, 255))1 padding-box,
+
+    linear-gradient(to right, rgb(255, 183, 0), rgb(0, 162, 255))1 border-box;
+
+    filter: drop-shadow(0.3125rem 0.3125rem 0.5rem rgb(0, 0, 0));
+
+}
+
+.content{
+
+    padding: 1.25rem 4.375rem;
+
+}
+
+.content div.services{
+
+    background-color: rgb(21, 21, 180);
+
+    border-radius: 0.3125rem;
+
+    text-align: center;
+
+    width: fit-content;
+
+    font-size: 1.5625rem;
+
+    text-transform: capitalize;
+
+    padding: 0.3125rem;
+
+    position: relative;
+
+}
+
+.d_load{
+
+    background-color: rgb(29, 29, 177); 
+
+    font-size: 1.125rem;
+
+    width: fit-content;
+
+    float: right;
+
+    margin-right:  16rem;
+
+    margin-top: -4rem;
+
+    padding: 0.375rem;
+
+    border-radius: 0.3125rem;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    position: relative;
+
+    cursor: pointer;
+
+    transition: 0.1s;
+
+    user-select: none;
+    
+    text-decoration: none;
+
+    color: var(--color-white);
+
+}
+.d_load:hover:active {
+    font-size: larger;
+}
+
+.flex{
+
+    display: flex;
+
+    justify-content: space-around;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.Service_provide{
+
+      display: inline-block;
+
+    }
+
+.statistics{
+
+    display: flex;
+
+    justify-content: space-around;
+
+}
+
+.statistics_box{
+
+    display: block;
+
+    background-color: rgba(255,255,244,0.1);
+
+    border-radius: 0.3125rem;
+
+    padding: 0.625rem 1.25rem; 
+
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.numbers{
+
+    font-size: 4.5rem;
+
+    color: antiquewhite;
+
+}
+
+.no_header{
+
+    font-size: small;
+
+}
+
+.sup{
+
+    font-size: x-large;
+
+}
+
+.sample_flex{
+
+    display: flex;
+
+    justify-content: space-evenly;
+
+}
+.text{
+    width: 80%;
+}
+.render{
+    color: var(--color-gold);
+    font-size: 27px;
+}
