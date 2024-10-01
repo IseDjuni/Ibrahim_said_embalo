@@ -112,7 +112,7 @@ body{
 
     height: calc(100vh - 4.375rem);
 
-    background-image: url('../web_img/black-paper-background.webp');
+    background-image: url('/web_img/black-paper-background.webp');
 
     background-position: center;
 
