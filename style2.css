@@ -18,6 +18,18 @@
 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 
+    filter: drop-shadow(1px 1px 7px black);
+
+    animation: anime 3.5s ease-out;
+
+}
+@keyframes anime{
+    from{
+        transform: translateX(-100px);
+    }
+    to{
+        transform: translateX(0);
+    }
 }
 
 .name span{
@@ -39,9 +51,16 @@
     width: 26rem;
 
     height: auto;
-
+ animation: anime3 4s linear;
 }
-
+@keyframes anime3{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1.0;
+    }
+}
 .profile_picture{
 
     height: 15.625rem;
@@ -65,9 +84,18 @@
     linear-gradient(to right, rgb(255, 183, 0), rgb(0, 162, 255))1 border-box;
 
     filter: drop-shadow(0.3125rem 0.3125rem 0.5rem rgb(0, 0, 0));
+    animation: anime1 2.5s ease-out;
 
 }
-
+@keyframes anime1 {
+    from{
+        transform: translateY(-1000px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+    
+}
 .content{
 
     padding: 1.25rem 4.375rem;
@@ -202,4 +230,22 @@
 .render{
     color: var(--color-gold);
     font-size: 27px;
+}
+.identifiers{
+    font-style: italic;
+    color: var(--color-gold);
+    padding: 10px;
+}
+.bottom_links{
+    text-decoration: none;
+    display: inline;
+    font-size: 13px;
+    color: whitesmoke;
+    text-transform:uppercase;
+    letter-spacing: 2px;
+}
+.back_img{
+    background-image: url('../Web_ject_2/web_img/contacs.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
