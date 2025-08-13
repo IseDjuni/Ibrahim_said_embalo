@@ -15,61 +15,59 @@
    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
-
-   <link rel="stylesheet" type="text/css" href="style1.css"/>
    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js" integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
    <link rel="stylesheet" type="text/css" href="style2.css"/>
-
+   <link rel="stylesheet" type="text/css" href="style1.css"/>
    <script type="text/javascript" src="scrit.js"></script>
 
 </head>
 
   <body>
+    <script>
+      function toggleMenu() {
+        const menuList = document.getElementById("menuList");
+        menuList.classList.toggle("show");
+      }
+    </script>
+<nav class="dropdown_menu">
+  <h1 draggable="false" class="logo"> <span>ISE</span> ACADEMY</h1>
 
-    <nav class="dropdown_menu">
-      
-      <input type="checkbox" id="check"/>
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-   </label>
+   <ul id="menuList">
 
-       <h1 draggable="false" class="logo"> <span>ISE</span> ACADEMY</h1>
+       <li><a href="index.html">HOME</a></li>
 
-        <ul>
+       <li><a href="about1.html">ABOUT</a></li>
 
-            <li><a href="index.html">Home</a></li>
+       <li><a href="contac1.html">CONTACT</a></li>
 
-            <li><a href="#">ABOUT</a></li>
+       <li><a href="#">PRODUCTS</a></li>
 
-            <li><a href="">Contact</a></li>
-
-            <li><a href="contac1.html">GALLRY</a></li>
-
-        </ul>
-
-
-    </nav>
+   </ul> 
+   <div class="menu-icon">
+            <i class="fas fa-bars" onclick="toggleMenu()"></i>
+   </div>   
+</nav>
 
      <section class="hero">
 
       <br /><br /><br /><br /><br />
 
-        &nbsp; <div class="name">I am Ibrahim Sa'id <br />
+        &nbsp; <div class="name"> I am Ibrahim Sa'id <br />
 
-          <span><h1>I'm a Graphics Designer<br />
+          <span> <h1>I'm a Graphics Designer<br />
 
-            Unvailing a world of Creativity</span><br />
+            Unvailing a world of Creativity</h1></span><br />
 
-            <span>In Digital Realm</span>
+            <h1><span style="color:rgba(255, 184, 4, 0.863); background:none">In Digital Realm</span>
 
           </h1>
 
         </div>
 
-        <img src="Web_ject_2\web_img\self.png" class="profile_picture"/>
+        <img src="..\Web_ject_2\web_img\self.png" class="profile_picture"/>
 
       <div class="body_margin">
 
@@ -87,11 +85,11 @@
 
       </div><br /><br /><br />
 
-      <a href="20240426_165628.jpg" download class="d_load" onclick="dLoad()" id="loading">Download CV <span class="fas fa-caret-down"></span></a>
-      <div style="padding: 20px 78px; filter: drop-shadow(1px 1px 3px black);">
-        <a href="https://www.instagram.com/isedjuni/?locale=uken1&hl=am-et"><span class="fab fa-instagram fa-2x"></span></a>&nbsp;&nbsp;
-        <a href="https://ng.linkedin.com/in/ibrahim-said-embalo-27ab15294"><span class="fab fa-linkedin fa-2x"></span></a>&nbsp;&nbsp;
-        <a href="contact.html"><span class="fab fa-whatsapp fa-2x"></span></a> 
+      <a href="#" download class="d_load" onclick="dLoad()" id="loading" > Download CV <span class="fas fa-caret-down"></span></a>
+      <div class="social-icon">
+        <a href="https://www.instagram.com/isedjuni/?locale=uken1&hl=am-et" target="_blank"><span class="fab fa-instagram fa-2x"></span></a>&nbsp;&nbsp;
+        <a href="https://ng.linkedin.com/in/ibrahim-said-embalo-27ab15294" target="_blank"><span class="fab fa-linkedin fa-2x"></span></a>&nbsp;&nbsp;
+        <a href="contact.html"><span class="fab fa-whatsapp fa-2x" target="_blank"></span></a> 
       </div>
 
       <br /><br />
@@ -109,9 +107,9 @@
   
       <center class="statistics">
   
-        <div class="statistics_box">
+        <div id="box1" class="statistics_box">
   
-         <span class="numbers">5+</span><br />
+         <span  class="numbers">5+</span><br />
   
          <span class="no_header">Done Projects</span>
   
@@ -119,7 +117,7 @@
   
         </div>
   
-        <div class="statistics_box">
+        <div id="box1" class="statistics_box">
   
          <span class="numbers">2<sup class="sup">Days</sup></span><br />
   
@@ -129,7 +127,7 @@
   
         </div>
   
-        <div class="statistics_box">
+        <div id="box2" class="statistics_box">
   
          <span class="numbers">3+</span><br />
   
@@ -139,7 +137,7 @@
   
         </div>
   
-        <div class="statistics_box">
+        <div id="box2" class="statistics_box">
   
           <span class="numbers">3.5<sup class="sup">months</sup></span><br />
   
@@ -169,7 +167,7 @@
 
           <SPAN class="render">Graphics Design </SPAN><br /><br />
 
-            <div class="text">
+            <div id="box3" class="text">
 
               In the fast-paced digital landscape, visual communication is paramount. Our graphics design service is dedicated to bringing 
 
@@ -188,7 +186,7 @@
 
              <span class="render">Static web Development </span><br /><br />
 
-                <div class="text">
+                <div  id="box3" class="text">
 
                    In digital age, your online presence speaks volumes about your brand. Our static web development service 
 
@@ -214,7 +212,7 @@
      
       <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;
 
-      <a href="#">ABOUT</a>&nbsp;&nbsp;&nbsp;
+      <a href="about1.html">ABOUT</a>&nbsp;&nbsp;&nbsp;
 
       <a href="">Contact</a>&nbsp;&nbsp;&nbsp;
 
@@ -227,7 +225,7 @@
     <center class="social">
       <a href="https://www.instagram.com/isedjuni/?locale=uken1&hl=am-et" target="_blank"><span class="fab fa-instagram fa-2x"></span></a>&nbsp;&nbsp;
       <a href="https://ng..linkedin.com/in/ibrahim-said-embalo-27ab15294" target="_blank"><span class="fab fa-linkedin fa-2x"></span></a>&nbsp;&nbsp;
-      <a href="contact.html"><span class="fab fa-whatsapp fa-2x"></span></a>
+      <a href="contact.html"><span class="fab fa-whatsapp fa-2x" target="-blank"></span></a>
     </center>
     <br />
     <center style="color: rgb(241, 238, 238); font-size: small;">
