@@ -115,7 +115,7 @@ body{
 
     height: calc(100vh - 4.375rem);
 
-    background-image: url(../Web_ject_2/web_img/xsxs.jpg);
+    background-image: url(Web_ject_2/web_img/xsxs.jpg);
 
     background-position: center;
 
@@ -225,7 +225,7 @@ nav.dropdown_menu ul li a:hover::before{
     position: relative;
 }
 .about-img{
-    background-image: url(../Web_ject_2/web_img/contact.png);
+    background-image: url(Web_ject_2/web_img/contact.png);
     background-size: cover;
     max-width: 300rem;
     border-radius: 1.5rem;
