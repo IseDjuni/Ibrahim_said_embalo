@@ -32,7 +32,8 @@ body{
 }
 
 .dropdown_menu{
-    background-color: rgb(0, 1, 10);
+    background-color: rgb(3, 6, 24);
+    top:0;
     height: 4.375rem;
     width: 100vw;
     max-height: 300rem;
@@ -40,6 +41,9 @@ body{
     display: flex;
     justify-content: space-between;
     padding: 2.5%;
+    position: fixed;
+    opacity: 90%;
+    z-index: 999;
 }
 .menu-icon{
     display: none;
@@ -205,6 +209,7 @@ nav.dropdown_menu ul li a:hover::before{
     pointer-events: none;
 }
 .about{
+     margin-top: 5rem;
     padding: 10px;
     position: relative;
 }
