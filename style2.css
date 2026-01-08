@@ -262,7 +262,7 @@
     letter-spacing: 2px;
 }
 .back_img{
-    background-image: url(/Web_ject_2/web_img/contacs.jpeg);
+    background-image: url(Web_ject_2/web_img/contacs.jpeg);
     background-size: contain;
     background-repeat:repeat-y;
 }
